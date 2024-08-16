@@ -1,1 +1,1 @@
-JimmyAnderson.github.io
+janderson.github.io

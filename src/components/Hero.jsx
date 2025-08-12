@@ -48,13 +48,13 @@ const Hero = () => {
               {/* Profile Picture */}
               <div className="w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-primary-500/30">
                 <img 
-                  src="/images/yuta-yuta-okkotsu.gif" 
+                  src="./images/yuta-yuta-okkotsu.gif" 
                   alt="Jim Anderson" 
                   className="w-full h-full object-cover"
                   style={{ display: 'block', zIndex: 10, position: 'relative' }}
                   onLoad={() => {
                     console.log('GIF loaded successfully!');
-                    console.log('Image dimensions:', document.querySelector('img[src="/images/yuta-yuta-okkotsu.gif"]').naturalWidth, 'x', document.querySelector('img[src="/images/yuta-yuta-okkotsu.gif"]').naturalHeight);
+                    console.log('Image dimensions:', document.querySelector('img[src="./images/yuta-yuta-okkotsu.gif"]').naturalWidth, 'x', document.querySelector('img[src="./images/yuta-yuta-okkotsu.gif"]').naturalHeight);
                   }}
                 />
               </div>

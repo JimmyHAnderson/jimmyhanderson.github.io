@@ -1,0 +1,10 @@
+[33mc83a9a2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Fix GitHub Actions workflow with proper permissions
+[33m51147ba[m Add production environment and ensure .nojekyll file
+[33m345453f[m Switch to peaceiris/actions-gh-pages for more reliable deployment
+[33mdcc7c2c[m Comprehensive fix for GitHub Pages MIME type issue
+[33m1101f71[m Add .nojekyll file and fix base path for GitHub Pages
+[33m3e9dbd2[m Fix Vite build configuration for GitHub Pages
+[33m84d08f5[m Fix GitHub Actions environment configuration
+[33m7f23ace[m Fix GitHub Actions deployment permissions
+[33m493987f[m Complete portfolio
+[33m5636760[m updates

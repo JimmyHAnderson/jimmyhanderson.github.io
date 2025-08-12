@@ -1,11 +1,9 @@
 import { motion } from 'framer-motion'
-import { Code, Database, Cloud, TestTube, Tools } from 'lucide-react'
 
 const Skills = () => {
   const skillCategories = [
     {
       title: "Programming Languages",
-      icon: Code,
       skills: [
         { name: "Java", level: 90 },
         { name: "Python", level: 85 },
@@ -17,7 +15,6 @@ const Skills = () => {
     },
     {
       title: "Web & Frameworks",
-      icon: Code,
       skills: [
         { name: "React", level: 85 },
         { name: "HTML/CSS", level: 80 },
@@ -29,7 +26,6 @@ const Skills = () => {
     },
     {
       title: "Databases",
-      icon: Database,
       skills: [
         { name: "PostgreSQL", level: 80 },
         { name: "MongoDB", level: 75 },
@@ -39,7 +35,6 @@ const Skills = () => {
     },
     {
       title: "Cloud & Infrastructure",
-      icon: Cloud,
       skills: [
         { name: "AWS (S3, EC2, Lambda, RDS)", level: 75 },
         { name: "Azure", level: 65 },
@@ -48,7 +43,6 @@ const Skills = () => {
     },
     {
       title: "Testing & Tools",
-      icon: TestTube,
       skills: [
         { name: "Docker", level: 80 },
         { name: "Git", level: 85 },
@@ -64,7 +58,6 @@ const Skills = () => {
     },
     {
       title: "Other Tools",
-      icon: Tools,
       skills: [
         { name: "Perforce", level: 70 },
         { name: "Jira", level: 80 },
@@ -106,38 +99,24 @@ const Skills = () => {
               viewport={{ once: true }}
               className="glass-effect rounded-lg p-6"
             >
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="p-2 bg-primary-600 rounded-lg">
-                  <category.icon size={24} />
-                </div>
-                <h3 className="text-xl font-bold text-primary-400">
-                  {category.title}
-                </h3>
-              </div>
+              <h3 className="text-xl font-bold text-primary-400 mb-6">
+                {category.title}
+              </h3>
 
               <div className="space-y-4">
                 {category.skills.map((skill, skillIndex) => (
-                  <motion.div
-                    key={skillIndex}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: skillIndex * 0.1 }}
-                    viewport={{ once: true }}
-                  >
+                  <div key={skillIndex}>
                     <div className="flex justify-between items-center mb-2">
                       <span className="text-white font-medium">{skill.name}</span>
                       <span className="text-primary-400 text-sm">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-dark-700 rounded-full h-2">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        transition={{ duration: 1, delay: skillIndex * 0.1 }}
-                        viewport={{ once: true }}
+                      <div
                         className="bg-gradient-to-r from-primary-500 to-primary-600 h-2 rounded-full"
+                        style={{ width: `${skill.level}%` }}
                       />
                     </div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </motion.div>
@@ -160,16 +139,12 @@ const Skills = () => {
                 "NumPy", "Pandas", "TensorFlow", "Machine Learning",
                 "Data Analysis", "API Development", "System Design", "Performance Optimization"
               ].map((skill, index) => (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
                   className="px-4 py-2 bg-primary-600/20 text-primary-400 rounded-lg text-center font-medium"
                 >
                   {skill}
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>

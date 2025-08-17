@@ -8,6 +8,7 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import BackgroundAnimation from './components/BackgroundAnimation'
+import SpotifyEmbed from './components/SpotifyEmbed'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -49,6 +50,7 @@ function App() {
         <Skills />
         <Contact />
       </main>
+      <SpotifyEmbed />
     </div>
   )
 }

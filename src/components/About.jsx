@@ -66,7 +66,7 @@ const About = () => {
                   Arizona State University
                 </h4>
                 <p className="text-dark-300 mb-1">Bachelor of Science in Computer Science</p>
-                <p className="text-primary-400 text-sm">Expected Graduation: May 2024</p>
+                <p className="text-primary-400 text-sm">Expected Graduation: Spring 2026</p>
               </div>
               <div className="pt-4 border-t border-dark-700">
                 <h5 className="text-lg font-semibold text-white mb-2">Relevant Coursework</h5>
